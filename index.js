@@ -9,5 +9,5 @@ function fuzzyMatch(drivers, arg) {
 }
 
 function matchName(drivers, arg) {
-  return drivers.filter(function(element) { return element.name === arg });
+  return drivers.filter(function(element) { return element.name.toUpperCase() === arg.toUpperCase() });
 }
